@@ -1,0 +1,18 @@
+<h1>Scraped Articles</h1>
+
+<div class="articles">
+    {{#each article}}
+    <div class="row article">
+        <div class="col-sm-6">
+            <div class="row">{{title}}</div>
+            <div class="row">{{url}}</div>
+            <div class="row">{{username}}</div>
+        </div>
+        <div class="col-sm-6">
+            <button type='button' class='btn btn-primary saveBtn float-right' data-id='{{_id}}' data-bool='true'>Save Article</button>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<script src="js/app.js"></script>
